@@ -45,14 +45,57 @@
                     <view key="view" contentMode="scaleToFill" id="4h6-OU-esW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etJ-hS-eDQ">
+                                <rect key="frame" x="187" y="247" width="40" height="17"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpJ-D0-one">
+                                <rect key="frame" x="187" y="294" width="40" height="17"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay4-1T-zEb">
+                                <rect key="frame" x="166" y="543" width="82" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <state key="normal" title="Directions"/>
+                                <connections>
+                                    <action selector="onDirectionsButtonTapped:" destination="5Lt-tE-VDT" eventType="touchUpInside" id="Ias-dG-muV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-bG-Amj">
+                                <rect key="frame" x="175.5" y="189" width="63.5" height="27"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ay4-1T-zEb" firstAttribute="top" secondItem="JpJ-D0-one" secondAttribute="bottom" constant="232" id="H1F-gN-wik"/>
+                            <constraint firstItem="etJ-hS-eDQ" firstAttribute="top" secondItem="S4Z-bG-Amj" secondAttribute="bottom" constant="31" id="TuG-Ym-EX5"/>
+                            <constraint firstItem="ay4-1T-zEb" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="UjK-LW-JlV"/>
+                            <constraint firstItem="S4Z-bG-Amj" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="d4y-bY-FP5"/>
+                            <constraint firstItem="JpJ-D0-one" firstAttribute="top" secondItem="etJ-hS-eDQ" secondAttribute="bottom" constant="30" id="d9f-he-kc3"/>
+                            <constraint firstItem="S4Z-bG-Amj" firstAttribute="top" secondItem="KmG-Yx-j9V" secondAttribute="top" constant="101" id="iXG-CR-Lvz"/>
+                            <constraint firstItem="JpJ-D0-one" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="tlw-Jz-ZMb"/>
+                            <constraint firstItem="etJ-hS-eDQ" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="wUk-yz-UYk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KmG-Yx-j9V"/>
                     </view>
                     <navigationItem key="navigationItem" id="2q5-1Q-6Pa"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="etJ-hS-eDQ" id="aCV-21-oD2"/>
+                        <outlet property="nameLabel" destination="S4Z-bG-Amj" id="MsR-bL-EBW"/>
+                        <outlet property="phoneLabel" destination="JpJ-D0-one" id="bqz-YY-hpo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a42-JJ-a75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="123"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="122.54464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A5T-2d-Ok2">
