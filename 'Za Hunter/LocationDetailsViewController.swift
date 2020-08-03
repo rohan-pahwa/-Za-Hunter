@@ -5,15 +5,15 @@
 //  Created by Rohan Pahwa on 8/3/20.
 //  Copyright © 2020 Rohan. All rights reserved.
 //
-
+import MapKit
 import UIKit
 
 class LocationDetailsViewController: UIViewController {
-
+    var selectedMapItem = MKMapItem()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(selectedMapItem.name!)
     }
     
 
