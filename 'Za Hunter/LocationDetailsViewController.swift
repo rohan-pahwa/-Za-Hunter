@@ -7,6 +7,7 @@
 //
 import MapKit
 import UIKit
+import SafariServices
 
 class LocationDetailsViewController: UIViewController {
     var selectedMapItem = MKMapItem()
@@ -33,5 +34,11 @@ class LocationDetailsViewController: UIViewController {
     @IBAction func onDirectionsButtonTapped(_ sender: Any) {
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
             MKMapItem.openMaps(with: [selectedMapItem], launchOptions: launchOptions)
+    }
+
+    @IBAction func onWebsiteButtonTapped(_ sender: Any) {
+        if let url = selectedMapItem.url {
+           present(SFSafariViewController(url: url), animated: true)
+        }
     }
 }

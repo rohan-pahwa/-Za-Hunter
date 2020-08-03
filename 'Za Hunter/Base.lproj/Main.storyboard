@@ -46,6 +46,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-bG-Amj">
+                                <rect key="frame" x="175.5" y="189" width="63.5" height="27"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etJ-hS-eDQ">
                                 <rect key="frame" x="187" y="247" width="40" height="17"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
@@ -66,15 +72,18 @@
                                     <action selector="onDirectionsButtonTapped:" destination="5Lt-tE-VDT" eventType="touchUpInside" id="Ias-dG-muV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-bG-Amj">
-                                <rect key="frame" x="175.5" y="189" width="63.5" height="27"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-ua-H8C">
+                                <rect key="frame" x="175.5" y="605" width="63" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="onWebsiteButtonTapped:" destination="5Lt-tE-VDT" eventType="touchUpInside" id="lWI-5t-UCX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="VlZ-ua-H8C" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="DMw-hM-sxG"/>
                             <constraint firstItem="ay4-1T-zEb" firstAttribute="top" secondItem="JpJ-D0-one" secondAttribute="bottom" constant="232" id="H1F-gN-wik"/>
                             <constraint firstItem="etJ-hS-eDQ" firstAttribute="top" secondItem="S4Z-bG-Amj" secondAttribute="bottom" constant="31" id="TuG-Ym-EX5"/>
                             <constraint firstItem="ay4-1T-zEb" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="UjK-LW-JlV"/>
@@ -83,6 +92,7 @@
                             <constraint firstItem="S4Z-bG-Amj" firstAttribute="top" secondItem="KmG-Yx-j9V" secondAttribute="top" constant="101" id="iXG-CR-Lvz"/>
                             <constraint firstItem="JpJ-D0-one" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="tlw-Jz-ZMb"/>
                             <constraint firstItem="etJ-hS-eDQ" firstAttribute="centerX" secondItem="4h6-OU-esW" secondAttribute="centerX" id="wUk-yz-UYk"/>
+                            <constraint firstItem="VlZ-ua-H8C" firstAttribute="top" secondItem="ay4-1T-zEb" secondAttribute="bottom" constant="32" id="zbg-px-IqQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KmG-Yx-j9V"/>
                     </view>
